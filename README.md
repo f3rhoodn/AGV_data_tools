@@ -22,10 +22,14 @@ Explanation:
   - pedestrain: there are 2 pedestrain in the scene. These csv files include their global coordinates and orientations.
   
 2) In total, there are 12 sensors attached to the ego vehicle. There are two configurations of sensors for recording data. 
-Method one: 
+Method one and two. Image below shows the sensor configuration in the two methods.  
+<img src="images/Capture_config.PNG" width="600">
+Sensors "Front up" and "Rear up" are same for both configurations. 
+Each sensor has its own coordinate and orientation values with respect to the center of AGV. All these values can be found in file: 
 
-<img src="images/1.png" width="100">
-
+```
+  positions_camera.txt
+```
 
 
 
