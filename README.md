@@ -30,10 +30,8 @@ Each sensor has its own coordinate and orientation values with respect to the ce
 ```
   positions_camera.txt
 ```
-
-
-
-
 2) How to read data:
+
+3) To visualize we can either use Python (pyPlot or Open3D recommended) or Matlab (pcshow)
 
 
