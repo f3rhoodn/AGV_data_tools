@@ -1,0 +1,54 @@
+X devant, Y vers le haut, Z vers la droite
+
+Positions par rapport au milieu de l'éssieu arrière.
+The order of transformation should be respected. in Rear Center up first pitch and then roll.
+
+
+*Caméras avant gauche (front left) method 1:
+  x="-0.645" y="0.118" z="2.1"
+  all roll="-17.5°"
+  pitch="-30°"  right
+  pitch="120°" center
+  pitch="45°"  left
+  
+  
+*Caméra avant droite (front right) method 2:
+  x="0.645" y="0.118" z="2.1"
+  roll="-17.5°"
+  pitch="-120°"
+  
+
+*Caméras arrière droite (rear right) method 1:
+  x="0.645" y="0.118" z="-0.6"
+  all roll="-17.5°"
+  pitch="150°"  right
+  pitch="-60°"  center
+  pitch="-135°" left
+  
+
+*Caméra arrière gauche (rear left) method 2:
+  x="-0.645" y="0.118" z="-0.6"
+  roll="-17.5°"
+  pitch="60°"
+  
+
+*Caméra avant dessus (front center up):
+  x="0" y="-1.805" z="2" 
+  roll="30.5°"
+
+*Caméra arrière dessus (rear center up):
+  x="0" y="-1.755" z="-0.55" 
+  pitch="180°"
+  roll="-67.5°"
+  
+Camera (front left) method 2:
+x="-0.645" y="0.118" z="2.1"
+  roll="-17.5°"
+  pitch="-30°"  right
+  
+
+Camera (rear right) method 2:
+x="0.645" y="0.118" z="-0.6"
+  roll="-17.5°"
+  pitch="150°"  right
+  
