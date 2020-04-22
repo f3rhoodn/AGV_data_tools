@@ -41,7 +41,15 @@ RGB files can be read in any environment like a normal image. For example in Mat
 This process can be done similarly in Python.
 
 3) Convert raw depth data to Point cloud:
-In order to convert a pixel to 3D real world coordinate characteristic parameters of the sensor (matrix k) is required. Using this information the conversion is performed. This is done using Matlab function `pixel2pts3d`. Input for this function is Matrix k, image coordinate of the given pixel and its depth value. The output is 3D world coordinate. 
+In order to convert a pixel to 3D real world coordinate characteristic parameters of the sensor (matrix k) is required. Using this information the conversion is performed. This is done using Matlab function `pixel2pts3d`. Input for this function is Matrix k, image coordinate of the given pixel and its depth value. The output is 3D world coordinate.
+`k` matrix for the sensors in the simulation is as follow:
+```
+K = [144.337567297406             0        250
+            0          350.060966544099    145
+            0                     0         1]
+```
+Example file `demo_depth_to_3D.m` shows how to use this function to convert depth to point cloud. Given depth and RGB images, it will display RGB, depth image and point cloud of the:
+
 
 4) To visualize we can either use Python (pyPlot or Open3D recommended) or Matlab (pcshow)
 
