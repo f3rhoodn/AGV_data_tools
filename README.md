@@ -51,6 +51,8 @@ K = [144.337567297406             0        250
 Example file `demo_depth_to_3D.m` shows how to use this function to convert depth to point cloud. Given depth and RGB images, it will display RGB, depth image and point cloud of the:
 
 
+To show point cloud it uses `pcshow` function. To prevent errors, Computer Vision Toolbox should be installed with Matlab, otherwise, another method of display should be used.
+
 4) To visualize we can either use Python (pyPlot or Open3D recommended) or Matlab (pcshow)
 
 
