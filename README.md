@@ -53,6 +53,11 @@ Example file `demo_depth_to_3D.m` shows how to use this function to convert dept
 
 To show point cloud it uses `pcshow` function. To prevent errors, Computer Vision Toolbox should be installed with Matlab, otherwise, another method of display should be used.
 
+The generated x,y,z coordinates of point cloud can be simply saved in a text file or any other conventional point cloud format such as PLY or PCD (using `pcwrite` function).
+
+
+
+I explain how to merge sensor data by giving an example. I explain how to do the same things in python by giving examples and functions. 
 4) To visualize we can either use Python (pyPlot or Open3D recommended) or Matlab (pcshow)
 
 
