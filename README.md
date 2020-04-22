@@ -31,7 +31,18 @@ Each sensor has its own coordinate and orientation values with respect to the ce
   positions_camera.txt
 ```
 2) How to read data:
+RGB files can be read in any environment like a normal image. For example in Matlab imread function can be used. However, for reading depth information we need to now parameters of the sensor that captures the depth image. The captured depth images in the dataset are 500x290. Therefore, every image contains 145000 points. Knowing these values, in Matlab the depth files can be read as:
+```
+    FID=fopen(fileName,'r');
+    DepthImage = fread(FID,500*290*4,'float');
+    fclose(FID);
+    depthDataRaw = reshape(DepthImage, 500,290);
+```
+This process can be done similarly in Python.
 
-3) To visualize we can either use Python (pyPlot or Open3D recommended) or Matlab (pcshow)
+3) Convert raw depth data to Point cloud:
+
+
+4) To visualize we can either use Python (pyPlot or Open3D recommended) or Matlab (pcshow)
 
 
