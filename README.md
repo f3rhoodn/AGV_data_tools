@@ -4,6 +4,7 @@ To use these tools I will use Python and Matlab.
 
 1) First, the 4DVirtualiz dataset should be downloaded from NAS. The data is simulated in two slightly different arrangments (with and without obstable). The data without obstacle is in folder "Vide" and the data with obstacle can be found in folder "Obstacle".
 Structure of each folder (Obstacle for example):
+```
   Obstacle------
       ----depth----
       ----depth_post---
@@ -11,6 +12,7 @@ Structure of each folder (Obstacle for example):
       ----vehicle.csv----
       ----pedestrain.csv-----
       ----pedestrain2.csv------
+```
       
 Explanation:
   - depth: include raw depth files (.raw format).
