@@ -24,6 +24,7 @@ Explanation:
 2) In total, there are 12 sensors attached to the ego vehicle. There are two configurations of sensors for recording data. 
 Method one: 
 
+<img src="images/1.png" width="100">
 
 
 
