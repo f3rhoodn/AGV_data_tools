@@ -77,6 +77,6 @@ Translation of multiple sensors can be done the same way and at the end they can
 Notice that in some Matlab functions parallel processing toolbox is used. Make sure that this toolbox is added or modify parallel sections of the code (such as `parfor`) to sequential. 
 
 4) Python: 
-All the functions are provided with a Python version in `my_util.py` library. For visualization `pyplot` can be used. However, for a better visualization installing `Open3D` library is recommended.  
+All the functions are provided with a Python version in `my_util.py` library. For visualization `pyplot` can be used. However, for a better visualization installing `Open3D` library is recommended which also gives numerous other capabalities for manipulation of point clouds.  
 
 
