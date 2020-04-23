@@ -76,7 +76,7 @@ Translation of multiple sensors can be done the same way and at the end they can
 <img src="images/merging.PNG" width="700">
 Notice that in some Matlab functions parallel processing toolbox is used. Make sure that this toolbox is added or modify parallel sections of the code (such as `parfor`) to sequential. 
 
-I explain how to merge sensor data by giving an example. I explain how to do the same things in python by giving examples and functions. the ground plane can be removed by RANSAC or experimentally.
-4) To visualize we can either use Python (pyPlot or Open3D recommended) or Matlab (pcshow)
+4) Python: 
+All the functions are provided with a Python version in `my_util.py` library. For visualization `pyplot` can be used. However, for a better visualization installing `Open3D` library is recommended.  
 
 
