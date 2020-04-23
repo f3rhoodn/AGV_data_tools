@@ -55,9 +55,25 @@ To show point cloud it uses `pcshow` function. To prevent errors, Computer Visio
 
 The generated x,y,z coordinates of point cloud can be simply saved in a text file or any other conventional point cloud format such as PLY or PCD (using `pcwrite` function).
 
+4) Merging point clouds coming from multiple sensors:
+To merge point clouds of different sensors, the points from each individual sensor should be translated to world coordinates. For that we should use extrinsic parameters of each sensor (`positions_camera.txt` file). To carry out those transformations, function `pcTranslate` is used (both in Matlab and Python):
+```
+outputPtCloud = pcTranslation(inputPtCloud,yaw,pitch,roll, xyzTranslate);
+```
+given a point cloud (`inputPtCloud`), a theta degree rotation around `z` (yaw), `y` (pitch), and `x` (roll) axes can be applied. Also, given a translation vector `xyzTranslate` the point cloud can be placed in this coordinate in the global coordinate system. for example:
+```             
+                %rotations
+                th_yaw = 0;
+                th_pitch = 45;
+                th_roll = 0;
+                % translation
+                c = [1 0 1]';
+                ptCloud = pcTranslation(ptCloud,th_yaw,th_pitch,th_roll, c);
+```
+will perform a rotation around y axis and will translate each point in the point cloud by `c` vector. 
+Translation of multiple sensors can be done the same way and at the end they can be merged by `pcmerge` function in Matlab or its Python equivalent (simple matrix concatenation). Example `demo_sensor_merge` shows an example that data from 3 sensors (center, left and right) are loaded and translated and merged into one point cloud. 
 
-
-I explain how to merge sensor data by giving an example. I explain how to do the same things in python by giving examples and functions. 
+I explain how to merge sensor data by giving an example. I explain how to do the same things in python by giving examples and functions. the ground plane can be removed by RANSAC or experimentally.
 4) To visualize we can either use Python (pyPlot or Open3D recommended) or Matlab (pcshow)
 
 
