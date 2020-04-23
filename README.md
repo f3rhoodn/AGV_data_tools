@@ -71,7 +71,9 @@ given a point cloud (`inputPtCloud`), a theta degree rotation around `z` (yaw), 
                 ptCloud = pcTranslation(ptCloud,th_yaw,th_pitch,th_roll, c);
 ```
 will perform a rotation around y axis and will translate each point in the point cloud by `c` vector. 
-Translation of multiple sensors can be done the same way and at the end they can be merged by `pcmerge` function in Matlab or its Python equivalent (simple matrix concatenation). Example `demo_sensor_merge` shows an example that data from 3 sensors (center, left and right) are loaded and translated and merged into one point cloud. 
+Translation of multiple sensors can be done the same way and at the end they can be merged by `pcmerge` function in Matlab or its Python equivalent (simple matrix concatenation). It should be noticed that the order of rotation around each axis should be respected. A Yaw-Pitch rotation is different from a Pitch-Yaw rotation. The order for the sensors in dataset is Roll-Pitch. Example `demo_sensor_merge` shows an example that data from 3 sensors (center, left and right) are loaded and translated and merged into one point cloud:
+
+Notice that in some Matlab functions parallel processing toolbox is used. Make sure that this toolbox is added or modify parallel sections of the code (such as `parfor`) to sequential. 
 
 I explain how to merge sensor data by giving an example. I explain how to do the same things in python by giving examples and functions. the ground plane can be removed by RANSAC or experimentally.
 4) To visualize we can either use Python (pyPlot or Open3D recommended) or Matlab (pcshow)
