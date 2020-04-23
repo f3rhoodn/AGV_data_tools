@@ -2,7 +2,7 @@
 
 To run the codes Python and Matlab will be required.
 
-### 1) The dataset:###
+### 1) The dataset: ###
 First, the 4DVirtualiz dataset should be downloaded from NAS. The data is simulated in two slightly different arrangments (with and without obstacle). The data without obstacle is in folder "Vide" and the data with obstacles can be found in folder "Obstacle".
 Structure of each folder is as below (Obstacle for example):
 
