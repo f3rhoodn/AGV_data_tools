@@ -24,7 +24,7 @@ Explanation:
  - RGB: image file equivalent to the captured depth information.
  - Vehicle: information regarding global coordinates (x,y,z) and orientations (yaw, pitch, roll) of 
         the ego vehicle in the scene in a given timestamp.
- - Pedestrian: there is two pedestrians in the scene. These CSV files include their global
+ - Pedestrian: there are two pedestrians in the scene. These CSV files include their global
         coordinates and orientations.
 ```
 
